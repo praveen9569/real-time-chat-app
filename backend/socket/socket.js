@@ -7,10 +7,13 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
-		origin: ["http://localhost:3000"],
+		origin: [
+			"https://real-time-chat-app-1-cs5d.onrender.com" // your Render backend URL
+		],
 		methods: ["GET", "POST"],
 	},
 });
+
 
 export const getReceiverSocketId = (receiverId) => {
 	return userSocketMap[receiverId];
