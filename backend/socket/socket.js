@@ -8,7 +8,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
 	cors: {
 		origin: [
-			"https://real-time-chat-app-1-cs5d.onrender.com" // your Render backend URL
+			"https://real-time-chat-app-lime-five.vercel.app/" // your Render backend URL
 		],
 		methods: ["GET", "POST"],
 	},
